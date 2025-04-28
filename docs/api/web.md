@@ -6598,6 +6598,7 @@ const nextJsProjectOptions: web.NextJsProjectOptions = { ... }
 | <code><a href="#projen.web.NextJsProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.web.NextJsProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.web.NextJsProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.web.NextJsProjectOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.web.NextJsProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.web.NextJsProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.web.NextJsProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -7275,6 +7276,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.web.NextJsProjectOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.web.NextJsProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -7792,6 +7806,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -8683,6 +8698,7 @@ const nextJsTypeScriptProjectOptions: web.NextJsTypeScriptProjectOptions = { ...
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.web.NextJsTypeScriptProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -9376,6 +9392,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.web.NextJsTypeScriptProjectOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.web.NextJsTypeScriptProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -9893,6 +9922,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -11123,6 +11153,7 @@ const reactProjectOptions: web.ReactProjectOptions = { ... }
 | <code><a href="#projen.web.ReactProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.web.ReactProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.web.ReactProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.web.ReactProjectOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.web.ReactProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.web.ReactProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.web.ReactProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -11773,6 +11804,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.web.ReactProjectOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.web.ReactProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -12290,6 +12334,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -13376,6 +13421,7 @@ const reactTypeScriptProjectOptions: web.ReactTypeScriptProjectOptions = { ... }
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.web.ReactTypeScriptProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -14042,6 +14088,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.web.ReactTypeScriptProjectOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.web.ReactTypeScriptProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -14559,6 +14618,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 

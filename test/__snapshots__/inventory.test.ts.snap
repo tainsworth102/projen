@@ -133,6 +133,23 @@ exports[`inventory 1`] = `
         "switch": "cdk-assertions",
       },
       {
+        "default": ""^2"",
+        "docs": "Version range of the AWS CDK CLI to depend on.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "cdkCliVersion",
+        "optional": true,
+        "parent": "AwsCdkDepsCommonOptions",
+        "path": [
+          "cdkCliVersion",
+        ],
+        "simpleType": "string",
+        "switch": "cdk-cli-version",
+      },
+      {
         "deprecated": true,
         "docs": "Which AWS CDKv1 modules this project requires.",
         "featured": false,
@@ -1321,6 +1338,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "boolean",
         "switch": "cdk-assertions",
+      },
+      {
+        "default": ""^2"",
+        "docs": "Version range of the AWS CDK CLI to depend on.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "cdkCliVersion",
+        "optional": true,
+        "parent": "AwsCdkDepsCommonOptions",
+        "path": [
+          "cdkCliVersion",
+        ],
+        "simpleType": "string",
+        "switch": "cdk-cli-version",
       },
       {
         "deprecated": true,
@@ -2587,6 +2621,22 @@ exports[`inventory 1`] = `
         "switch": "allow-library-dependencies",
       },
       {
+        "docs": "The command line to execute in order to synthesize the CDK application (language specific).",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "app",
+        "optional": true,
+        "parent": "AwsCdkTypeScriptAppOptions",
+        "path": [
+          "app",
+        ],
+        "simpleType": "string",
+        "switch": "app",
+      },
+      {
         "default": ""main.ts"",
         "docs": "The CDK app's entrypoint (relative to the source directory, which is "src" by default).",
         "featured": false,
@@ -2955,6 +3005,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- will be included by default for AWS CDK >= 1.0.0 < 2.0.0",
         "deprecated": true,
         "docs": "Warning: NodeJS only.",
@@ -2988,6 +3055,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "boolean",
         "switch": "cdk-assertions",
+      },
+      {
+        "default": ""^2"",
+        "docs": "Version range of the AWS CDK CLI to depend on.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "cdkCliVersion",
+        "optional": true,
+        "parent": "AwsCdkDepsCommonOptions",
+        "path": [
+          "cdkCliVersion",
+        ],
+        "simpleType": "string",
+        "switch": "cdk-cli-version",
       },
       {
         "deprecated": true,
@@ -6018,6 +6102,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- new version will be announced",
         "docs": "Libraries will be picked up by the construct catalog when they are published to npm as jsii modules and will be published under:.",
         "featured": false,
@@ -6070,6 +6171,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "boolean",
         "switch": "cdk-assertions",
+      },
+      {
+        "default": ""^2"",
+        "docs": "Version range of the AWS CDK CLI to depend on.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "cdkCliVersion",
+        "optional": true,
+        "parent": "AwsCdkDepsCommonOptions",
+        "path": [
+          "cdkCliVersion",
+        ],
+        "simpleType": "string",
+        "switch": "cdk-cli-version",
       },
       {
         "deprecated": true,
@@ -6972,7 +7090,7 @@ exports[`inventory 1`] = `
         "fullType": {
           "primitive": "string",
         },
-        "initialValue": ""~5.7.0"",
+        "initialValue": ""~5.8.0"",
         "jsonLike": true,
         "name": "jsiiVersion",
         "optional": true,
@@ -10528,6 +10646,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": ""2.0.28"",
         "docs": "Minimum version of the cdk8s-cli to depend on.",
         "featured": false,
@@ -13446,6 +13581,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- new version will be announced",
         "docs": "Libraries will be picked up by the construct catalog when they are published to npm as jsii modules and will be published under:.",
         "featured": false,
@@ -14303,7 +14455,7 @@ exports[`inventory 1`] = `
         "fullType": {
           "primitive": "string",
         },
-        "initialValue": ""~5.7.0"",
+        "initialValue": ""~5.8.0"",
         "jsonLike": true,
         "name": "jsiiVersion",
         "optional": true,
@@ -16511,6 +16663,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- new version will be announced",
         "docs": "Libraries will be picked up by the construct catalog when they are published to npm as jsii modules and will be published under:.",
         "featured": false,
@@ -17300,7 +17469,7 @@ exports[`inventory 1`] = `
         "fullType": {
           "primitive": "string",
         },
-        "initialValue": ""~5.7.0"",
+        "initialValue": ""~5.8.0"",
         "jsonLike": true,
         "name": "jsiiVersion",
         "optional": true,
@@ -20363,6 +20532,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- no license checks are run during the build and all licenses will be accepted",
         "docs": "Configure which licenses should be deemed acceptable for use by dependencies.",
         "featured": false,
@@ -21099,7 +21285,7 @@ exports[`inventory 1`] = `
         "fullType": {
           "primitive": "string",
         },
-        "initialValue": ""~5.7.0"",
+        "initialValue": ""~5.8.0"",
         "jsonLike": true,
         "name": "jsiiVersion",
         "optional": true,
@@ -23288,6 +23474,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "BundlerOptions",
         "switch": "bundler-options",
+      },
+      {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
       },
       {
         "default": "- no license checks are run during the build and all licenses will be accepted",
@@ -25699,6 +25902,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "BundlerOptions",
         "switch": "bundler-options",
+      },
+      {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
       },
       {
         "default": "- no license checks are run during the build and all licenses will be accepted",
@@ -28374,6 +28594,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "BundlerOptions",
         "switch": "bundler-options",
+      },
+      {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
       },
       {
         "default": "- no license checks are run during the build and all licenses will be accepted",
@@ -32028,6 +32265,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- no license checks are run during the build and all licenses will be accepted",
         "docs": "Configure which licenses should be deemed acceptable for use by dependencies.",
         "featured": false,
@@ -34425,6 +34679,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "BundlerOptions",
         "switch": "bundler-options",
+      },
+      {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
       },
       {
         "default": "- no license checks are run during the build and all licenses will be accepted",
@@ -37107,6 +37378,23 @@ exports[`inventory 1`] = `
         "switch": "bundler-options",
       },
       {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
+      },
+      {
         "default": "- no license checks are run during the build and all licenses will be accepted",
         "docs": "Configure which licenses should be deemed acceptable for use by dependencies.",
         "featured": false,
@@ -39763,6 +40051,23 @@ exports[`inventory 1`] = `
         ],
         "simpleType": "BundlerOptions",
         "switch": "bundler-options",
+      },
+      {
+        "default": ""latest"",
+        "docs": "The version of Bun to use if using Bun as a package manager.",
+        "featured": false,
+        "fullType": {
+          "primitive": "string",
+        },
+        "jsonLike": true,
+        "name": "bunVersion",
+        "optional": true,
+        "parent": "NodePackageOptions",
+        "path": [
+          "bunVersion",
+        ],
+        "simpleType": "string",
+        "switch": "bun-version",
       },
       {
         "default": "- no license checks are run during the build and all licenses will be accepted",

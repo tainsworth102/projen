@@ -1683,6 +1683,7 @@ The project.
 | <code><a href="#projen.javascript.NodePackage.property.packageManager">packageManager</a></code> | <code><a href="#projen.javascript.NodePackageManager">NodePackageManager</a></code> | The package manager to use. |
 | <code><a href="#projen.javascript.NodePackage.property.packageName">packageName</a></code> | <code>string</code> | The name of the npm package. |
 | <code><a href="#projen.javascript.NodePackage.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command which executes "projen". |
+| <code><a href="#projen.javascript.NodePackage.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.javascript.NodePackage.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code><a href="#projen.javascript.CodeArtifactOptions">CodeArtifactOptions</a></code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.javascript.NodePackage.property.license">license</a></code> | <code>string</code> | The SPDX license of this module. |
 | <code><a href="#projen.javascript.NodePackage.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version supported by this package. |
@@ -1906,6 +1907,18 @@ public readonly projenCommand: string;
 - *Type:* string
 
 The command which executes "projen".
+
+---
+
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.javascript.NodePackage.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+
+The version of Bun to use if using Bun as a package manager.
 
 ---
 
@@ -7572,6 +7585,7 @@ const nodePackageOptions: javascript.NodePackageOptions = { ... }
 | <code><a href="#projen.javascript.NodePackageOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.javascript.NodePackageOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.javascript.NodePackageOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.javascript.NodePackageOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.javascript.NodePackageOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code><a href="#projen.javascript.CodeArtifactOptions">CodeArtifactOptions</a></code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.javascript.NodePackageOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.javascript.NodePackageOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -7739,6 +7753,19 @@ sense that it will add the module as a dependency to your `package.json`
 file with the latest version (`^`). You can specify semver requirements in
 the same syntax passed to `npm i` or `yarn add` (e.g. `express@^2`) and
 this will be what you `package.json` will eventually include.
+
+---
+
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.javascript.NodePackageOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
 
 ---
 
@@ -8232,6 +8259,7 @@ const nodeProjectOptions: javascript.NodeProjectOptions = { ... }
 | <code><a href="#projen.javascript.NodeProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.javascript.NodeProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.javascript.NodeProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.javascript.NodeProjectOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.javascript.NodeProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code><a href="#projen.javascript.CodeArtifactOptions">CodeArtifactOptions</a></code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.javascript.NodeProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.javascript.NodeProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -8879,6 +8907,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.javascript.NodeProjectOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.javascript.NodeProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -9396,6 +9437,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 

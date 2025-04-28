@@ -1932,6 +1932,7 @@ Test whether the given construct is a component.
 | --- | --- | --- |
 | <code><a href="#projen.awscdk.AwsCdkDeps.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#projen.awscdk.AwsCdkDeps.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
+| <code><a href="#projen.awscdk.AwsCdkDeps.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | The dependency requirement for the CDK CLI (e.g. '^2.3.4'). |
 | <code><a href="#projen.awscdk.AwsCdkDeps.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | Whether CDK dependencies are added as normal dependencies (and peer dependencies). |
 | <code><a href="#projen.awscdk.AwsCdkDeps.property.cdkMajorVersion">cdkMajorVersion</a></code> | <code>number</code> | The major version of the AWS CDK (e.g. 1, 2, ...). |
 | <code><a href="#projen.awscdk.AwsCdkDeps.property.cdkMinimumVersion">cdkMinimumVersion</a></code> | <code>string</code> | The minimum version of the AWS CDK (e.g. `2.0.0`). |
@@ -1958,6 +1959,20 @@ public readonly project: Project;
 ```
 
 - *Type:* projen.Project
+
+---
+
+##### `cdkCliVersion`<sup>Required</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDeps.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+
+The dependency requirement for the CDK CLI (e.g. '^2.3.4').
+
+Will return `^2` if the version was unspecified by the user.
 
 ---
 
@@ -2193,6 +2208,7 @@ Test whether the given construct is a component.
 | --- | --- | --- |
 | <code><a href="#projen.awscdk.AwsCdkDepsJava.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#projen.awscdk.AwsCdkDepsJava.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
+| <code><a href="#projen.awscdk.AwsCdkDepsJava.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | The dependency requirement for the CDK CLI (e.g. '^2.3.4'). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJava.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | Whether CDK dependencies are added as normal dependencies (and peer dependencies). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJava.property.cdkMajorVersion">cdkMajorVersion</a></code> | <code>number</code> | The major version of the AWS CDK (e.g. 1, 2, ...). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJava.property.cdkMinimumVersion">cdkMinimumVersion</a></code> | <code>string</code> | The minimum version of the AWS CDK (e.g. `2.0.0`). |
@@ -2219,6 +2235,20 @@ public readonly project: Project;
 ```
 
 - *Type:* projen.Project
+
+---
+
+##### `cdkCliVersion`<sup>Required</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDepsJava.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+
+The dependency requirement for the CDK CLI (e.g. '^2.3.4').
+
+Will return `^2` if the version was unspecified by the user.
 
 ---
 
@@ -2454,6 +2484,7 @@ Test whether the given construct is a component.
 | --- | --- | --- |
 | <code><a href="#projen.awscdk.AwsCdkDepsJs.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#projen.awscdk.AwsCdkDepsJs.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
+| <code><a href="#projen.awscdk.AwsCdkDepsJs.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | The dependency requirement for the CDK CLI (e.g. '^2.3.4'). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJs.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | Whether CDK dependencies are added as normal dependencies (and peer dependencies). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJs.property.cdkMajorVersion">cdkMajorVersion</a></code> | <code>number</code> | The major version of the AWS CDK (e.g. 1, 2, ...). |
 | <code><a href="#projen.awscdk.AwsCdkDepsJs.property.cdkMinimumVersion">cdkMinimumVersion</a></code> | <code>string</code> | The minimum version of the AWS CDK (e.g. `2.0.0`). |
@@ -2480,6 +2511,20 @@ public readonly project: Project;
 ```
 
 - *Type:* projen.Project
+
+---
+
+##### `cdkCliVersion`<sup>Required</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDepsJs.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+
+The dependency requirement for the CDK CLI (e.g. '^2.3.4').
+
+Will return `^2` if the version was unspecified by the user.
 
 ---
 
@@ -2715,6 +2760,7 @@ Test whether the given construct is a component.
 | --- | --- | --- |
 | <code><a href="#projen.awscdk.AwsCdkDepsPy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#projen.awscdk.AwsCdkDepsPy.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
+| <code><a href="#projen.awscdk.AwsCdkDepsPy.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | The dependency requirement for the CDK CLI (e.g. '^2.3.4'). |
 | <code><a href="#projen.awscdk.AwsCdkDepsPy.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | Whether CDK dependencies are added as normal dependencies (and peer dependencies). |
 | <code><a href="#projen.awscdk.AwsCdkDepsPy.property.cdkMajorVersion">cdkMajorVersion</a></code> | <code>number</code> | The major version of the AWS CDK (e.g. 1, 2, ...). |
 | <code><a href="#projen.awscdk.AwsCdkDepsPy.property.cdkMinimumVersion">cdkMinimumVersion</a></code> | <code>string</code> | The minimum version of the AWS CDK (e.g. `2.0.0`). |
@@ -2741,6 +2787,20 @@ public readonly project: Project;
 ```
 
 - *Type:* projen.Project
+
+---
+
+##### `cdkCliVersion`<sup>Required</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDepsPy.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+
+The dependency requirement for the CDK CLI (e.g. '^2.3.4').
+
+Will return `^2` if the version was unspecified by the user.
 
 ---
 
@@ -10218,6 +10278,7 @@ const awsCdkConstructLibraryOptions: awscdk.AwsCdkConstructLibraryOptions = { ..
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -10346,6 +10407,7 @@ const awsCdkConstructLibraryOptions: awscdk.AwsCdkConstructLibraryOptions = { ..
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -10914,6 +10976,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.awscdk.AwsCdkConstructLibraryOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.awscdk.AwsCdkConstructLibraryOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -11431,6 +11506,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -12770,6 +12846,24 @@ assertions is already included in 'aws-cdk-lib'
 
 ---
 
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
+
+---
+
 ##### ~~`cdkDependencies`~~<sup>Optional</sup> <a name="cdkDependencies" id="projen.awscdk.AwsCdkConstructLibraryOptions.property.cdkDependencies"></a>
 
 - *Deprecated:* For CDK 2.x use "deps" instead. (or "peerDeps" if you're building a library)
@@ -12945,6 +13039,7 @@ const awsCdkDepsCommonOptions: awscdk.AwsCdkDepsCommonOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkDepsCommonOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -12996,6 +13091,24 @@ Install the assertions library?
 
 Only needed for CDK 1.x. If using CDK 2.x then
 assertions is already included in 'aws-cdk-lib'
+
+---
+
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDepsCommonOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
 
 ---
 
@@ -13094,6 +13207,7 @@ const awsCdkDepsOptions: awscdk.AwsCdkDepsOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkDepsOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -13146,6 +13260,24 @@ Install the assertions library?
 
 Only needed for CDK 1.x. If using CDK 2.x then
 assertions is already included in 'aws-cdk-lib'
+
+---
+
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkDepsOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
 
 ---
 
@@ -13312,6 +13444,7 @@ const awsCdkJavaAppOptions: awscdk.AwsCdkJavaAppOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkJavaAppOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -14159,6 +14292,24 @@ assertions is already included in 'aws-cdk-lib'
 
 ---
 
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkJavaAppOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
+
+---
+
 ##### ~~`cdkDependencies`~~<sup>Optional</sup> <a name="cdkDependencies" id="projen.awscdk.AwsCdkJavaAppOptions.property.cdkDependencies"></a>
 
 - *Deprecated:* For CDK 2.x use "deps" instead. (or "peerDeps" if you're building a library)
@@ -14423,6 +14574,7 @@ const awsCdkPythonAppOptions: awscdk.AwsCdkPythonAppOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkPythonAppOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -15410,6 +15562,24 @@ assertions is already included in 'aws-cdk-lib'
 
 ---
 
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkPythonAppOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
+
+---
+
 ##### ~~`cdkDependencies`~~<sup>Optional</sup> <a name="cdkDependencies" id="projen.awscdk.AwsCdkPythonAppOptions.property.cdkDependencies"></a>
 
 - *Deprecated:* For CDK 2.x use "deps" instead. (or "peerDeps" if you're building a library)
@@ -15569,6 +15739,7 @@ const awsCdkTypeScriptAppOptions: awscdk.AwsCdkTypeScriptAppOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -15687,11 +15858,13 @@ const awsCdkTypeScriptAppOptions: awscdk.AwsCdkTypeScriptAppOptions = { ... }
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkVersionPinning">cdkVersionPinning</a></code> | <code>boolean</code> | Use pinned version instead of caret version for CDK. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.constructsVersion">constructsVersion</a></code> | <code>string</code> | Minimum version of the `constructs` library to depend on. |
+| <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.app">app</a></code> | <code>string</code> | The command line to execute in order to synthesize the CDK application (language specific). |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.appEntrypoint">appEntrypoint</a></code> | <code>string</code> | The CDK app's entrypoint (relative to the source directory, which is "src" by default). |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.edgeLambdaAutoDiscover">edgeLambdaAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `cloudfront.experimental.EdgeFunction` for each `.edge-lambda.ts` handler in your source tree. If this is disabled, you can manually add an `awscdk.AutoDiscover` component to your project. |
 | <code><a href="#projen.awscdk.AwsCdkTypeScriptAppOptions.property.experimentalIntegRunner">experimentalIntegRunner</a></code> | <code>boolean</code> | Enable experimental support for the AWS CDK integ-runner. |
@@ -16256,6 +16429,19 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### `bunVersion`<sup>Optional</sup> <a name="bunVersion" id="projen.awscdk.AwsCdkTypeScriptAppOptions.property.bunVersion"></a>
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.awscdk.AwsCdkTypeScriptAppOptions.property.codeArtifactOptions"></a>
 
 ```typescript
@@ -16773,6 +16959,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -17964,6 +18151,24 @@ assertions is already included in 'aws-cdk-lib'
 
 ---
 
+##### `cdkCliVersion`<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkCliVersion"></a>
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
+
+---
+
 ##### ~~`cdkDependencies`~~<sup>Optional</sup> <a name="cdkDependencies" id="projen.awscdk.AwsCdkTypeScriptAppOptions.property.cdkDependencies"></a>
 
 - *Deprecated:* For CDK 2.x use "deps" instead. (or "peerDeps" if you're building a library)
@@ -18039,6 +18244,18 @@ public readonly constructsVersion: string;
 - *Default:* for CDK 1.x the default is "3.2.27", for CDK 2.x the default is "10.0.5".
 
 Minimum version of the `constructs` library to depend on.
+
+---
+
+##### `app`<sup>Optional</sup> <a name="app" id="projen.awscdk.AwsCdkTypeScriptAppOptions.property.app"></a>
+
+```typescript
+public readonly app: string;
+```
+
+- *Type:* string
+
+The command line to execute in order to synthesize the CDK application (language specific).
 
 ---
 
@@ -18441,6 +18658,7 @@ const constructLibraryAwsOptions: awscdk.ConstructLibraryAwsOptions = { ... }
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.bunVersion">bunVersion</a></code> | <code>string</code> | The version of Bun to use if using Bun as a package manager. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
@@ -18569,6 +18787,7 @@ const constructLibraryAwsOptions: awscdk.ConstructLibraryAwsOptions = { ... }
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkAssert">cdkAssert</a></code> | <code>boolean</code> | Warning: NodeJS only. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkCliVersion">cdkCliVersion</a></code> | <code>string</code> | Version range of the AWS CDK CLI to depend on. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkDependencies">cdkDependencies</a></code> | <code>string[]</code> | Which AWS CDKv1 modules this project requires. |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkDependenciesAsDeps">cdkDependenciesAsDeps</a></code> | <code>boolean</code> | If this is enabled (default), all modules declared in `cdkDependencies` will be also added as normal `dependencies` (as well as `peerDependencies`). |
 | <code><a href="#projen.awscdk.ConstructLibraryAwsOptions.property.cdkTestDependencies">cdkTestDependencies</a></code> | <code>string[]</code> | AWS CDK modules required for testing. |
@@ -19207,6 +19426,21 @@ this will be what you `package.json` will eventually include.
 
 ---
 
+##### ~~`bunVersion`~~<sup>Optional</sup> <a name="bunVersion" id="projen.awscdk.ConstructLibraryAwsOptions.property.bunVersion"></a>
+
+- *Deprecated:* use `AwsCdkConstructLibraryOptions`
+
+```typescript
+public readonly bunVersion: string;
+```
+
+- *Type:* string
+- *Default:* "latest"
+
+The version of Bun to use if using Bun as a package manager.
+
+---
+
 ##### ~~`codeArtifactOptions`~~<sup>Optional</sup> <a name="codeArtifactOptions" id="projen.awscdk.ConstructLibraryAwsOptions.property.codeArtifactOptions"></a>
 
 - *Deprecated:* use `AwsCdkConstructLibraryOptions`
@@ -19784,6 +20018,7 @@ environment:
 - Working directory: the project directory.
 - `$VERSION`: the current version. Looks like `1.2.3`.
 - `$LATEST_TAG`: the most recent tag. Looks like `prefix-v1.2.3`, or may be unset.
+- `$SUGGESTED_BUMP`: the suggested bump action based on commits. One of `major|minor|patch|none`.
 
 The command should print one of the following to `stdout`:
 
@@ -21294,6 +21529,26 @@ Install the assertions library?
 
 Only needed for CDK 1.x. If using CDK 2.x then
 assertions is already included in 'aws-cdk-lib'
+
+---
+
+##### ~~`cdkCliVersion`~~<sup>Optional</sup> <a name="cdkCliVersion" id="projen.awscdk.ConstructLibraryAwsOptions.property.cdkCliVersion"></a>
+
+- *Deprecated:* use `AwsCdkConstructLibraryOptions`
+
+```typescript
+public readonly cdkCliVersion: string;
+```
+
+- *Type:* string
+- *Default:* "^2"
+
+Version range of the AWS CDK CLI to depend on.
+
+Can be either a specific version, or an NPM version range.
+
+By default, the latest 2.x version will be installed; you can use this
+option to restrict it to a specific version or version range.
 
 ---
 
